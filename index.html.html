@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Scientific Poster: Power Electronics for Renewable Energy Integration</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#e9ecef;
+}
+
+.poster{
+width:1600px;
+margin:auto;
+background:white;
+padding-bottom:30px;
+}
+
+/* HEADER */
+
+.header{
+background:linear-gradient(to right,#1f3c52,#2c5d7c);
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.header h1{
+margin:0;
+font-size:42px;
+}
+
+.header p{
+margin-top:10px;
+font-size:20px;
+}
+
+/* GRID */
+
+.columns{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:25px;
+}
+
+.column{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* SECTIONS */
+
+.section{
+background:#f8f9fa;
+border-radius:10px;
+padding:20px;
+border:2px solid #2c5d7c;
+}
+
+.section h2{
+background:#2c5d7c;
+color:white;
+padding:12px;
+margin:-20px -20px 15px -20px;
+font-size:22px;
+text-align:center;
+}
+
+.section h3{
+font-size:16px;
+margin-top:15px;
+margin-bottom:6px;
+color:#1f3c52;
+}
+
+.section p{
+font-size:15px;
+line-height:1.6;
+text-align:justify;
+}
+
+.section ul{
+font-size:15px;
+padding-left:22px;
+}
+
+img{
+width:100%;
+margin-top:10px;
+border-radius:6px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:14px;
+margin:10px 0;
+}
+
+table,th,td{
+border:1px solid #444;
+}
+
+th{
+background:#dee2e6;
+padding:6px;
+}
+
+td{
+padding:6px;
+}
+
+.caption{
+font-size:12px;
+text-align:center;
+margin-top:4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="poster">
+
+<div class="header">
+<h1>Power Electronics: The Enabling Technology for Renewable Energy Integration</h1>
+<p>Zhongting Tang, Yongheng Yang, Frede Blaabjerg – IEEE</p>
+</div>
+
+<div class="columns">
+
+<div class="column">
+
+<div class="section">
+<h2>ABSTRACT</h2>
+<p>
+The rapid expansion of renewable energy has transformed modern power systems into inverter-dominated networks. Photovoltaic and wind generation are interfaced through power electronic converters, replacing traditional synchronous machines. While enabling high efficiency and flexible control, this transition reduces system inertia and introduces harmonic and stability challenges.
+This work examines converter topologies, control strategies, and performance characteristics that enable reliable renewable integration under modern grid code requirements.
+</p>
+</div>
+
+<div class="section">
+<h2>INTRODUCTION</h2>
+<p>
+Power electronics is the field of electrical engineering that focuses on the conversion, control, and conditioning of electrical power using semiconductor devices. It plays a critical role in modern energy systems, electric vehicles, renewable energy integration, and industrial automation.
+Efficient power conversion is essential to reduce energy losses and improve system performance. This project explores the fundamental principles and applications of power electronic converters.
+</p>
+
+<img src="images/extracted_img_p2_1.jpeg">
+<div class="caption">Global renewable capacity growth</div>
+
+</div>
+
+</div>
+
+<div class="column">
+
+<div class="section">
+<h2>MATERIALS & METHODS</h2>
+
+<h3>Converter Topologies</h3>
+
+<p>
+Voltage Source Converters (VSCs) provide the interface between renewable sources and the grid. Two-level (2L-VSC) and three-level neutral-point-clamped (3L-NPC) converters are widely used in medium- and high-power systems due to their efficiency and improved harmonic performance.
+Multilevel structures reduce switching stress and improve output voltage quality, making them suitable for large-scale photovoltaic and wind applications.
+</p>
+
+<img src="images/extracted_img_p4_1.jpeg">
+<div class="caption">Typical renewable energy system architecture</div>
+
+<h3>Control Strategies</h3>
+
+<p>
+Converter control is organized in hierarchical layers. The inner loop regulates current and voltage to ensure stable operation, while the outer loop controls power flow and DC-link voltage.
+</p>
+
+<p>
+Advanced control functions such as Maximum Power Point Tracking (MPPT), reactive power support, and frequency response enable compliance with modern grid codes and enhance overall system stability.
+</p>
+
+<img src="images/extracted_img_p5_1.png">
+<div class="caption">Converter topology and control structure</div>
+
+</div>
+
+</div>
+
+<div class="column">
+
+<div class="section">
+<h2>RESULTS – DYNAMIC RESPONSE</h2>
+
+<p>
+Modern grid codes require Fault Ride-Through (FRT) capability, ensuring converters remain connected during voltage dips and inject controlled current to support grid recovery.
+</p>
+
+<img src="images/extracted_img_p7_2.png">
+<div class="caption">Voltage ride-through requirement</div>
+
+<p>
+Fast transient response enables compliance with frequency-watt control and voltage support requirements.
+</p>
+
+<img src="images/extracted_img_p8_1.jpeg">
+<div class="caption">Frequency response characteristics</div>
+
+</div>
+
+<div class="section">
+<h2>RESULTS – PERFORMANCE</h2>
+
+<table>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>Peak Efficiency</td>
+<td>94–98%</td>
+</tr>
+
+<tr>
+<td>THD</td>
+<td>&lt; 5%</td>
+</tr>
+
+<tr>
+<td>Response Time</td>
+<td>&lt; 10 ms</td>
+</tr>
+
+</table>
+
+<p>
+Wide-bandgap (SiC) devices enhance thermal performance and efficiency.
+</p>
+
+</div>
+
+</div>
+
+<div class="column">
+
+<div class="section">
+
+<h2>DISCUSSION</h2>
+
+<p>
+Power electronics has evolved from a simple energy conversion interface into a critical component for real-time grid stabilization.
+</p>
+
+<ul>
+<li>Modular Multi-level Converters (MMC)</li>
+<li>Grid-forming (GFM) inverters</li>
+<li>Reliability-oriented and fault-tolerant control</li>
+</ul>
+
+<img src="images/extracted_img_p9_1.png">
+<div class="caption">Renewable energy system integration with power electronic converters</div>
+
+</div>
+
+<div class="section">
+
+<h2>REFERENCES</h2>
+
+<p style="font-size:12px;">
+[1] Z. Tang, Y. Yang, and F. Blaabjerg, CSEE JPES, 2022.<br>
+[2] IEEE Std 1547-2018.<br>
+[3] IEEE Std 519-2014.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
